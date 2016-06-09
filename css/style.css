@@ -4,3 +4,47 @@
 #brand{
 	width: 80%;
 }
+.tabs-block{
+	background-color:green;
+	height: 1000px;
+	margin-top: 150px;	
+}
+
+.section-block2{
+	background-color:brown;
+	height: 1000px;
+	margin-top: 150px;	
+
+}
+.section-tab{
+	background-color:red;
+	height:300px;
+}
+
+
+
+
+
+
+@media (min-width: 992px){
+	.section-tab{
+		background-color:red;
+		height:300px;
+		position: absolute;
+		margin: 0 10px;
+	}
+
+	.tab-bottom{
+		top:0px;
+		left:0px;
+	}
+	.tab-center{
+		top:100px;
+		left:50px;
+	}
+	.tab-top{
+		top:200px;
+		left:100px;
+	}
+
+}
