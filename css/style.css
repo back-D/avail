@@ -10,7 +10,7 @@
 	margin-top: 150px;	
 }
 
-.section-block2{
+.right-block{
 	background-color:brown;
 	height: 1000px;
 	margin-top: 150px;	
@@ -29,7 +29,8 @@
 @media (min-width: 992px){
 	.section-tab{
 		background-color:red;
-		height:300px;
+		border:2px solid black;
+		height:700px;
 		position: absolute;
 		margin: 0 10px;
 	}
