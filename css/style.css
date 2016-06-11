@@ -1,51 +1,49 @@
-/*#brand{
-	margin: 50px;
-}*/
-#brand{
-	width: 80%;
-}
-.tabs-block{
-	background-color:green;
-	height: 1000px;
-	margin-top: 150px;	
+#brand {
+    width: 80%;
 }
 
-.right-block{
-	background-color:brown;
-	height: 1000px;
-	margin-top: 150px;	
+.tabs-block {
+    background-color: green;/*Delete after finishing*/
+    height: 1000px;/*Delete after finishing*/
 
-}
-.section-tab{
-	background-color:red;
-	height:300px;
+    margin-top: 150px;
 }
 
+.right-block {
+    background-color: brown; /*Delete after finishing*/
+    height: 1000px; /*Delete after finishing*/
 
+    margin-top: 150px;
 
+}
 
+.section-tab {
+    background-color: red;/*Delete after finishing*/
+    height: 300px;/*Delete after finishing*/
+}
 
+@media (min-width: 992px) {
+    .section-tab {
+        background-color: red;/*Delete after finishing*/
+        border: 2px solid black;/*Delete after finishing*/
+        height: 700px;/*Delete after finishing*/
+        position: absolute;
+        margin: 0 10px;
+    }
 
-@media (min-width: 992px){
-	.section-tab{
-		background-color:red;
-		border:2px solid black;
-		height:700px;
-		position: absolute;
-		margin: 0 10px;
-	}
+    .tab-bottom {
+        top: 0px;
+        left: 0px;
+    }
 
-	.tab-bottom{
-		top:0px;
-		left:0px;
-	}
-	.tab-center{
-		top:100px;
-		left:50px;
-	}
-	.tab-top{
-		top:200px;
-		left:100px;
-	}
+    .tab-center {
+        top: 100px;
+        left: 50px;
+    }
+
+    .tab-top {
+        top: 200px;
+        left: 100px;
+    }
 
 }
