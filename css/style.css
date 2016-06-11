@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -11,135 +12,171 @@
 .clearfix:after {
     clear: both;
 }
-body{
+
+body {
     font-family: Arial, Sans-serif;
     font-size: 100%;
 }
-.container{
+
+.container {
     margin: 0 auto;
-    width: 960px;
+    width: 1000px;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
 }
-ul li{
+
+ul li {
     list-style-type: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-p{
+
+p {
     font-size: 13px;
     line-height: 1.3em;
 }
+
 /*HEADER*/
-.header{
+.header {
     padding: 50px 0;
-    background-color: yellowgreen;
+    background-color: #00BFFF;
 }
-.header h1, .header h2{
-    color: greenyellow;
+
+.header h1, .header h2 {
+    color: #00FFFF;
     text-align: center;
 }
+
 /* NAVIGATION */
-.page-navigation{
+.page-navigation {
     background-color: #222;
     border-color: #101010;
     min-height: 41px;
 }
-.page-navigation li{
+
+.page-navigation li {
     float: left;
     width: 100px;
 }
-.page-navigation a{
+
+.page-navigation > .container > ul > li > a {
     display: block;
-    color: #9d9d9d;
+    color: #808080;
     line-height: 4em;
     font-weight: bold;
     text-align: center;
+    text-decoration: none;
 }
-.page-navigation li a:hover{
+
+.page-navigation li a:hover {
     color: yellowgreen;
     background-color: black;
 }
+
 /* LOGIN FORM */
-.login{
+.login {
     padding: 10px 0;
     float: right;
 }
-.login input[type="text"], input[type="password"]{
+
+.login input[type="text"], input[type="password"] {
     padding: 5px;
     margin-right: 5px;
     border: 1px solid transparent;
     border-radius: 5px;
     outline: none;
 }
-.login input[type="submit"]{
+
+.login input[type="submit"] {
     padding: 5px 15px;
     border: 1px solid lightgrey;
     border-radius: 5px;
 }
-.login input[type="submit"]:hover, button:hover{
+
+.login input[type="submit"]:hover, button:hover {
     background-color: darkgrey;
     color: white;
 }
+
 /* MAIN PART */
-.collections{
+/* CAROUSEL */
+#carousel{
+    margin: 15px; 0;
+}
+/* /CAROUSEL */
+
+.collections {
     overflow: auto;
 }
-.collection-title{
+
+.collection-title {
     padding-bottom: 5px;
     border-bottom: 1px solid #777;
     font-size: 36px;
 }
-.collection-title small{
+
+.collection-title small {
     color: #777;
     font-size: 70%;
 }
-.collection-item-outer{
+
+.collection-item-outer {
     display: inline-block;
     float: left;
     padding: 0 5px;
     width: 33.33%;
     box-sizing: border-box;
 }
-.collection-item-outer:first-child{
+
+.collection-item-outer:first-child {
     padding-left: 0;
     padding-right: 5px;
 }
-.collection-item-outer:last-child{
+
+.collection-item-outer:last-child {
     padding-left: 5px;
     padding-right: 0;
 }
-.collection-item{
+
+.collection-item {
     border: 1px solid #959595;
 }
-.collection-item img, .collection-item video{
+
+.collection-item img, .collection-item video {
     width: 100%;
 }
-.collection-text{
+
+.collection-text {
     padding: 0 20px 20px 20px;
 }
-.collection-text h3{
-    color: yellowgreen;
+
+.collection-text h3 {
+    color: #6495ED;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.collection-text p{
+
+.collection-text p {
     height: 80px;
     /*white-space: nowrap;*/
     overflow: hidden;
 }
-.collection-text button{
+
+.collection-text button {
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 5px;
     outline: none;
 }
+
 /* FOOTER */
-.footer{
-    background-color: yellowgreen;
+.footer {
+    background-color: #00BFFF;
     padding: 20px 0;
     margin-top: 30px;
     color: white;
