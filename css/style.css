@@ -32,7 +32,8 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1000px;
+    width:  85%;
+    padding: 0;
 }
 
 ul {
@@ -161,6 +162,7 @@ p {
 
 .collection-item img, .collection-item video {
     width: 100%;
+    max-width: 345px;
 }
 
 .collection-text {
