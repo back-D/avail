@@ -201,3 +201,17 @@ p {
     *zoom: 1;
 
 }
+
+.content {
+    margin-top: 60px;
+    width: 100%;
+    border: 2px solid #f0f3f5;
+}
+
+.content > .content-title {
+    padding: 10px;
+    line-height: 30px;
+    font-size: 26px;
+    color: #1f384b;
+    text-align: center;
+}
