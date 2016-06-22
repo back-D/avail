@@ -215,3 +215,47 @@ p {
     color: #1f384b;
     text-align: center;
 }
+
+.photoBlock > .photoBlockLeftSide {
+    width: 60%;
+    float: left;
+}
+
+.photoBlock > .photoBlockLeftSide img {
+    width: 80%;
+    float: right;
+
+}
+
+.photoBlock > .photoBlockRightSide {
+    width: 40%;
+    float: left;
+}
+
+.photoBlock > .photoBlockRightSide > .photoBlockDescription {
+    text-align: center;
+}
+
+.availDate {
+    border-bottom: 1px solid #2aabd2;
+}
+.availDate h4 {
+    margin: 0;
+    background: #a5a8b1;
+    color: black;
+    font-size: 18px;
+    border-bottom: 1px solid #8c8e97;
+    line-height: 24px;
+}
+
+.availDate p {
+    font-size: 20px;
+    color: #3677a7;
+    line-height: 4;
+    margin: 0;
+}
+
+.availSize {
+    margin: 0;
+    vertical-align: middle;
+}
