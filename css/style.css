@@ -222,25 +222,30 @@ p {
 }
 
 .photoBlock > .photoBlockLeftSide img {
-    width: 80%;
+    width: 95%;
     float: right;
 
 }
 
 .photoBlock > .photoBlockRightSide {
+
     width: 40%;
     float: left;
+
 }
 
 .photoBlock > .photoBlockRightSide > .photoBlockDescription {
     text-align: center;
+    width: 90%;
+    border: 1px solid #2aabd2;
+
 }
 
 .availDate {
     border-bottom: 1px solid #2aabd2;
 }
 .availDate h4 {
-    margin: 0;
+    margin: 0 0 1em;
     background: #a5a8b1;
     color: black;
     font-size: 18px;
@@ -251,10 +256,12 @@ p {
 .availDate p {
     font-size: 20px;
     color: #3677a7;
-    line-height: 4;
-    margin: 0;
+    margin: 0 0 1em;
 }
 
+#my-count-down {
+    margin: 1em 0;
+}
 .availSize {
     margin: 0;
     vertical-align: middle;
