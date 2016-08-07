@@ -148,7 +148,7 @@ a {
     color: #fff;
     background-color: #0052cc;
     border-color: #004ec2;
-    background-image: none;
+
 }
 
 .btn-primary:active:focus,.btn-primary:active:hover {
@@ -176,7 +176,7 @@ a {
 }
 
 [class*=" icon-"] {
-    font-family: icons !important;
+    font-family: 'Icons' !important;
     speak: none;
     font-style: normal;
     font-weight: 400;
@@ -187,6 +187,18 @@ a {
 
 .icon-arrow-right:before {
     content: "\e902";
+}
+
+.icon-facebook:before {
+    content: '\f09a';
+}
+
+.icon-twitter:before {
+    content: '\f099';
+}
+
+.icon-pinterest:before {
+    content: '\f0d2';
 }
 
 a {
@@ -272,4 +284,10 @@ a {
 
 .post-more {
     margin: 2rem 0;
+}
+
+.post-share .title-share:after {
+    content: '\e902';
+    font-family: 'Icons';
+    margin-left: 16px;
 }
