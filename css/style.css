@@ -28,12 +28,29 @@ img {
     clear: both;
 }
 
-.site-content {
+.site-content, .site-header {
     margin-top: 20px;
 }
 
 .container {
     padding: 0 20px;
+}
+
+.header-list {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.header-list li {
+    display: inline-block;
+    float: left;
+    width: 33.333333%;
+    height: 100%;
+
+    margin: auto 0;
 }
 
 .page-content {
@@ -51,7 +68,7 @@ img {
 .main .post-archive {}
 .main .post-archive-standart {}
 
-.post-archive .post-standart {
+.post-archive .post-standart, .header-content {
     display: block;
     text-align: center;
     margin-bottom: 48px;
