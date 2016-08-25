@@ -28,15 +28,6 @@ img {
     clear: both;
 }
 
-.site-content, .site-header {
-    margin: 20px auto 0;
-    width: 90%
-}
-
-.container {
-    padding: 0 20px;
-}
-
 .header-list {
     display: block;
     list-style: none;
@@ -48,7 +39,7 @@ img {
 .header-list .subscribe, .header-list .site-search {
     display: inline-block;
     float: left;
-    width: 25%;
+    width: 50%;
     margin: 0;
 }
 
@@ -62,13 +53,13 @@ img {
 }
 
 .header-list .site-description {
-    display: inline-block;
+    display: none;
     float: left;
     width: 50%;
     margin: 0;
 }
 
-.header-list .site-description h2 {
+.header-list .site-description h2, div.site-description h2 {
     margin: 0;
     color: #000;
     font-weight: 700;
@@ -76,16 +67,18 @@ img {
     line-height: 1;
 }
 
-.header-list .site-search .btn-search {
-    color: #000;
-    font-size: 27px;
-    padding: 8px 12px;
-    line-height: 1;
-    margin-right: -12px;
+div.site-description {
+    display: block;
+    margin: 0 auto;
 }
 
-.header-list .site-search .btn-search:hover {
-    color: #A0A0A0;
+.site-content, .site-header {
+    margin: 20px auto 0;
+    width: 90%
+}
+
+.container {
+    padding: 0 20px;
 }
 
 .page-content {
@@ -94,25 +87,27 @@ img {
 
 .main {
     position: relative;
-    float: left;
     min-height: 1px;
     padding: 0 20px;
-    width: 75%;
+    width: 100%;
 }
 
 .main .post-archive {}
 .main .post-archive-standart {}
 
-.post-archive .post-standart, .header-content {
-    display: block;
-    text-align: center;
+.post-archive .post-standart {
     margin-bottom: 48px;
     border-bottom: 1px #eceeef solid;
 }
 
+.post-archive .post-standart, .header-content {
+    display: block;
+    text-align: center;
+}
+
 .post-standart h2 {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 1;
     letter-spacing: -3px;
     color: #000;
@@ -188,6 +183,14 @@ img {
     margin: 0 8px;
 }
 
+.post-meta .views-text {
+    display: none;
+}
+
+.post-meta i {
+    display: inline;
+}
+
 .post-media {
     position: relative;
     margin: 48px 0;
@@ -203,13 +206,15 @@ img {
 
 .post-share .title-share {
     display: inline-block;
-    margin: 0 16px 0 0;
+    margin: 0 16px 0;
     color: #bababa;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-
+.post-share .title-share span {
+    margin-right: 16px;
+}
 
 .post-share .share-buttons {
     display: inline-block;
@@ -233,22 +238,19 @@ img {
 }
 
 .sidebar {
-    display: inline-block;
-    position: fixed;
-    left: 75%;
+    display: block;
+    position: relative;
     min-height: 1px;
     padding: 0 20px;
-    width: 20%;
+    width: 100%;
+
 }
-
-.sidebar .sidebar-wrapper {}
-
 
 .sidebar .filter-list {
     display: block;
     list-style: none;
     text-align: left;
-    margin: 0 0 48px;
+    margin: 0 0 24px;
     padding: 0;
 }
 
@@ -265,12 +267,10 @@ img {
     border-bottom: 1px solid #ccc;
 }
 
-.sidebar .filter-list li:active {
-    border-top: 1px solid #8c8c8c;
-    border-bottom: 1px solid #8c8c8c;
-}
+
 
 .subscribe-widget {
+    display: none;
     background-color: #eceeef;
     text-align: center;
     padding: 44px 20px;
@@ -304,15 +304,6 @@ img {
     margin-bottom: 32px;
 }
 
-.subscribe-widget .widget-content input {
-    width: 100%;
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 6px 12px;
-    color: #777;
-    background-color: #fff;
-    border: 1px solid #ccc;
-}
 
 .site-footer {
     background-color: #000;
@@ -357,4 +348,243 @@ img {
     margin: 0;
     list-style: none;
     font-size: 14px;
+}
+
+.footer-subscribe {
+    display: block;
+    padding: 48px 0;
+    text-align: center;
+}
+
+.footer-subscribe .subscribe-container {
+    padding: 0 0 48px;
+    margin: 0 auto;
+    border-bottom: 1px solid #777;
+}
+
+.footer-subscribe h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: capitalize;
+}
+
+.footer-subscribe .subscribe-message {
+    font-size: 18px;
+    margin: 0 auto 16px;
+}
+
+.input-group {
+    position: relative;
+    display: block;
+    margin-top: 32px;
+}
+
+.input-group .form-control {
+    width: 56%;
+    max-width: 290px;
+}
+
+.input-group-btn button {
+    margin-left: -4px;
+    line-height: 25px;
+}
+
+.footer-subscribe button.btn-effect:hover span:last-child {
+    transform: translateY(-150%) translateX(-50%);
+}
+
+#search {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    -webkit-animation: fade-zoom-in .3s forwards;
+    -o-animation: fade-zoom-in .3s forwards;
+    animation: fade-zoom-in .3s forwards;
+    display: none;
+    z-index: 9999;
+    -webkit-backface-visibility: hidden;
+}
+
+#search .close {
+    position: fixed;
+    font-size: 28px;
+    top: 48px;
+    right: 48px;
+    opacity: 1;
+    border: none;
+    background: transparent;
+    color: black;
+    text-shadow: none;
+}
+
+#search .close:after {
+    content: '\f00d';
+    font-family: 'FontAwesome';
+}
+
+#search.open {
+    display: block;
+}
+
+#search .form-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 40%;
+    margin-top: -32px;
+}
+
+#search input[type="search"] {
+    color: #000;
+    background: transparent;
+    font-size: 32px;
+    border: none;
+    width: 100%;
+    padding: 8px 12px;
+    overflow: hidden;
+    outline: none;
+    max-width: 560px;
+}
+
+input::-webkit-input-placeholder {
+    color: #000000;
+    text-align: center;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+    color: #000000;
+    text-align: center;
+}
+input:-ms-input-placeholder {
+    color: #000000;
+    text-align: center;
+}
+input:-moz-placeholder { /* Firefox 18- */
+    color: #000000;
+    text-align: center;
+}
+
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.close {
+    float: right;
+    font-weight: 700;
+    line-height: 1;
+
+}
+
+.row {
+    text-align: center;
+}
+
+.site-search .input-group button {
+    position: absolute;
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .header-list .site-description {
+        display: inline-block;
+    }
+
+    div.site-description {
+        display: none;
+    }
+
+    .header-list .subscribe, .header-list .site-search {
+        width: 25%;
+    }
+
+    .sidebar .filter-list {
+        margin: 0 0 24px;
+    }
+
+    .post-standart h2 {
+        font-size: 48px;
+    }
+
+    .post-meta .views-text {
+        display: inline;
+    }
+
+    .post-meta i {
+        display: none;
+    }
+
+    .sidebar .filter-list li {
+        width: 25%;
+        float: left;
+        border: 1px solid #ccc;
+    }
+
+    .sidebar .filter-list li:not(:last-child) {
+        border-right: none;
+    }
+
+    .sidebar .filter-list a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    #search input[type="search"] {
+        font-weight: 700;
+        font-size: 68px;
+        letter-spacing: -4px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .header-content {
+        margin-bottom: 48px;
+        border-bottom: 1px #eceeef solid;
+    }
+
+    .subscribe-widget {
+        display: block;
+    }
+
+    .sidebar {
+        display: inline-block;
+        position: fixed;
+        left: 75%;
+        width: 20%;
+    }
+
+    .sidebar .sidebar-wrapper {
+        border: none;
+        margin: 16px auto;
+    }
+
+    .sidebar .filter-list li {
+        width: 100%;
+        float: none;
+        border-right: none;
+        border-left: none;
+    }
+
+    .sidebar .filter-list li:not(:last-child) {
+        border-bottom: none;
+    }
+
+    .main {
+        float: left;
+        width: 75%;
+    }
+
+    .footer-subscribe {
+        display: none;
+    }
 }

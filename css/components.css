@@ -94,6 +94,21 @@ a {
     opacity: 1;
 }
 
+.form-control:focus {
+    border: 1px solid #777 !important;
+    outline: none;
+}
+
+.email {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 6px 12px;
+    color: #777;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -196,6 +211,19 @@ a {
     border-color: #ccc;
 }
 
+.btn-search {
+    color: #000;
+    font-size: 28px;
+    padding: 8px 12px;
+    line-height: 1;
+    margin-right: -12px;
+}
+
+.btn-search:hover {
+    color: #A0A0A0;
+}
+
+
 .filter-btn {
     color: #a0a0a0;
     background-color: #fff;
@@ -222,52 +250,6 @@ a {
     background-color: #d4d4d4;
 }
 
-@font-face {
-    font-family: icons;
-    src: url(../fonts/icons.eot);
-    src: url(../fonts/icons.eot) format("embedded-opentype"),url(../fonts/icons.ttf) format("truetype"),url(../fonts/icons.woff) format("woff"),url(../fonts/icons.svg) format("svg");
-    font-weight: 400;
-    font-style: normal;
-}
-
-[class*=" icon-"],body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-[class*=" icon-"] {
-    font-family: 'Icons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-}
-
-.icon-arrow-right:before {
-    content: "\e902";
-}
-
-.icon-facebook:before {
-    content: '\f09a';
-}
-
-.icon-twitter:before {
-    content: '\f099';
-}
-
-.icon-pinterest:before {
-    content: '\f0d2';
-}
-
-.icon-mail:before {
-    content: '\e002';
-}
-
-.icon-search:before {
-    content: '\e036';
-}
 
 a {
     -webkit-transition: all .2s ease;
@@ -354,8 +336,6 @@ a {
     margin: 2rem 0;
 }
 
-.post-share .title-share:after {
-    content: '\e902';
-    font-family: 'Icons';
-    margin-left: 16px;
-}
+
+
+
