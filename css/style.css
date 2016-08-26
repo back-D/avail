@@ -558,9 +558,8 @@ button.close {
 
     .sidebar {
         display: inline-block;
-        position: fixed;
-        left: 75%;
-        width: 20%;
+        position: relative;
+        width: 25%;
     }
 
     .sidebar .sidebar-wrapper {
