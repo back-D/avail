@@ -90,6 +90,7 @@ div.site-description {
     min-height: 1px;
     padding: 0 20px;
     width: 100%;
+    z-index: 1;
 }
 
 .main .post-archive {}
@@ -565,6 +566,7 @@ button.close {
     .sidebar .sidebar-wrapper {
         border: none;
         margin: 16px auto;
+        background: white;
     }
 
     .sidebar .filter-list li {

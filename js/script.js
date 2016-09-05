@@ -1,9 +1,25 @@
-function showText(elem){
-	if(elem.previousElementSibling.clientHeight === 80){
-		elem.previousElementSibling.style.height = "100%";
-		elem.innerHTML = "Show Less...";
-	} else{
-		elem.previousElementSibling.style.height = "80px";
-		elem.innerHTML = "Read more...";
-	}
-}
+
+$(document).ready(function () {
+    /*
+    function windowSizeIncrease() {
+        var windowSize = window.innerWidth;
+        if (windowSize >= 1200) {
+            $(".sidebar").stick_in_parent();
+        }
+    }
+
+    function windowSizeDecrease() {
+        var windowSize = window.innerWidth;
+        if (windowSize < 1200) {
+            $(".sidebar").trigger("sticky_kit:detach");
+        }
+    }
+
+    windowSizeIncrease();
+    windowSizeDecrease();
+    $(window).resize(windowSizeIncrease);
+    $(window).resize(windowSizeDecrease);*/
+    $(".sidebar").stick_in_parent();
+});
+
+
