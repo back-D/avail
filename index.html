@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="js/sticky_kit.js"></script>
     <title>Avails</title>
     <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
@@ -20,7 +21,7 @@
             <div class="site-description">
                 <div>
                     <a href="#">
-                        <h2>Сч.А.С.</h2>
+                        <h2>Avails</h2>
                     </a>
                 </div>
             </div>
@@ -36,7 +37,7 @@
                 <li class="site-description">
                     <div>
                         <a href="#">
-                            <h2>Сч.А.С.</h2>
+                            <h2>Avails</h2>
                         </a>
                     </div>
                 </li>
@@ -463,14 +464,14 @@
         </div>
         <div class="footer-wrapper clearfix">
             <div class="site-logo">
-                <h2>Сч.А.С.</h2>
+                <h2>Avails</h2>
                 <p>Счастливые часы. Акции. Скидки.</p>
             </div>
             <div class="contact-info">
                 <ul class="contact-list">
                     <li>T: 123-456-789</li>
                     <li>E: hello@email.com</li>
-                    <li>&copy; 2016 Сч.А.С.</li>
+                    <li>&copy; 2016 Avails</li>
                 </ul>
             </div>
         </div>
@@ -498,6 +499,27 @@
         </div>
     </div>
 </div>
+
+<script>
+    function windowSizeIncrease() {
+        var windowSize = window.innerWidth;
+        if (windowSize >= 1200) {
+            $(".sidebar").stick_in_parent();
+        }
+    }
+
+    function windowSizeDecrease() {
+        var windowSize = window.innerWidth;
+        if (windowSize < 1200) {
+            $(".sidebar").trigger("sticky_kit:detach");
+        }
+    }
+
+    windowSizeIncrease();
+    windowSizeDecrease();
+    $(window).resize(windowSizeIncrease);
+    $(window).resize(windowSizeDecrease);
+</script>
 
 </body>
 </html>
