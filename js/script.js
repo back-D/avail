@@ -1,22 +1,8 @@
 
 $(document).ready(function () {
-    /*
-    function windowSizeIncrease() {
-        var windowSize = window.innerWidth;
-        if (windowSize >= 1200) {
-            $(".sidebar").stick_in_parent();
-        }
-    }
-
-    windowSizeIncrease();
-
-    $(window).resize(windowSizeDecrease);*/
     $(".sidebar").stick_in_parent();
-
-
-
 });
-
+/*
 //----------
 // Models
 //----------
@@ -43,3 +29,5 @@ app.PostList = Backbone.Collection.extend({
 });
 
 app.postList = new app.PostList();
+*/
+

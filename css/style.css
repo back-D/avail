@@ -99,6 +99,7 @@ div.site-description {
 .post-archive .post-standart {
     margin-bottom: 48px;
     border-bottom: 1px #eceeef solid;
+    list-style: none;
 }
 
 .post-archive .post-standart, .header-content {
