@@ -1,18 +1,18 @@
 [
   {
     "age": 0,
-    "id": "1",
+    "id": "eatfirst_1",
     "type": "Акция",
-    "imageUrl": "img/eatfirst_img_1.jpg",
+    "imageUrl": "img/eatfirst_1.jpg",
     "name": "Здоровое и сбалансированное питание",
     "company": "Eatfirst",
     "snippet": "Здоровое тело - залог вашей продуктивности. А чтобы тело было здоровым, вам поможет здоровое питание!"
   },
   {
     "age": 1,
-    "id": "2",
+    "id": "alex_1",
     "type": "Скидка",
-    "imageUrl": "img/alex_img_1.jpg",
+    "imageUrl": "img/alex_1.jpg",
     "name": "Пальчики оближешь",
     "company": "ALEX\' BAKERY",
     "snippet": "Покушать в приятной атмосфере, отдохнуть и просто хорошо провести время за чашкой кофе в кругу друзей предлагает вам ресторан Alex\' Bakery!"

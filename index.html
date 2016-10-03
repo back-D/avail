@@ -29,11 +29,150 @@
 </head>
 <body>
 
+<div class="container-fluid">
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="site-description">
+                    <div>
+                        <a href="#">
+                            <h2>Avails</h2>
+                        </a>
+                    </div>
+                </div>
+                <ul class="header-list clearfix">
+                    <li class="subscribe">
+                        <div>
+                            <a href="#" class="btn btn-secondary btn-effect">
+                                <span>Подписаться</span>
+                                <span><i class="fa fa-envelope-o fa-lg"></i></span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="site-description">
+                        <div>
+                            <a href="#">
+                                <h2>Avails</h2>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="site-search">
+                        <div>
+                            <a href="#search" class="btn-search">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
 
 
-<div class="view-container">
-    <div ng-view class="view-frame"></div>
+    <div class="site-content">
+        <div class="container">
+            <div class="page-content clearfix">
+                <div class="sidebar" style="z-index: 2">
+                    <div class="sidebar-wrapper" style="background: white;">
+                        <ul class="filter-list clearfix">
+                            <li>
+                                <a href="#" class="btn filter-btn">Все</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn filter-btn">Счастливые часы</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn filter-btn">Акции</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn filter-btn">Скидки</a>
+                            </li>
+                        </ul>
+                        <div class="subscribe-widget">
+                            <div class="widget-title">
+                                <h4>Подписаться</h4>
+                            </div>
+                            <form method="post">
+                                <div class="widget-content">
+                                    <p>Подпишись на нашу бесплатную ежедневную рассылку, чтобы первым узнавать о новых акциях и скидках.</p>
+                                    <input type="text" class="form-control email" placeholder="Введи свой email">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-effect">
+                                    <span>Подписаться</span>
+                                    <span><i class="fa fa-envelope-o fa-lg"></i></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="post-archive">
+                        <div class="post-archive-standart">
+                            <p>
+                                Search:
+                                <input ng-model="$ctrl.query" />
+                            </p>
+
+                            <p>
+                                Sort by:
+                                <select ng-model="$ctrl.orderProp">
+                                    <option value="name">Alphabetical</option>
+                                    <option value="age">Newest</option>
+                                </select>
+                            </p>
+
+
+                            <div class="view-container">
+                                <div ng-view class="view-frame"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-subscribe">
+                <div class="subscribe-container">
+                    <h2>Подписаться</h2>
+                    <p class="subscribe-message">Подпишись на нашу бесплатную ежедневную рассылку, чтобы первым узнавать о
+                        новых акциях и скидках. Никакого спама, только лучшие предложения.</p>
+                    <form method="post">
+                        <div class="input-group">
+                            <input type="text" class="form-control email" placeholder="Введи свой email">
+                            <span class="input-group-btn">
+                            <button type="submit" class="btn btn-primary btn-effect">
+                                <span>Подписаться</span>
+                                <span class="fa fa-envelope-o fa-lg"></span>
+                            </button>
+                        </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-wrapper clearfix">
+                <div class="site-logo">
+                    <h2>Avails</h2>
+                    <p>Счастливые часы. Акции. Скидки.</p>
+                </div>
+                <div class="contact-info">
+                    <ul class="contact-list">
+                        <li>T: 123-456-789</li>
+                        <li>E: hello@email.com</li>
+                        <li>&copy; 2016 Avails</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
+
+
 
 <div class="site-search clearfix" id="search">
     <button type="button" class="close"></button>

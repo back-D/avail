@@ -6,5 +6,5 @@ angular.module('availApp', [
     'ngRoute',
     'core',
     'availDetail',
-    'availList',
+    'availList'
 ]);
