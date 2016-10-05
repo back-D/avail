@@ -45,16 +45,16 @@
                 <div class="sidebar-wrapper" style="background: white;">
                     <ul class="filter-list clearfix">
                         <li>
-                            <a href="#" class="btn filter-btn">Все</a>
+                            <a href="" class="btn filter-btn" ng-click="resetFilter()">Все</a>
                         </li>
                         <li>
-                            <a href="#" class="btn filter-btn">Счастливые часы</a>
+                            <a href="" class="btn filter-btn" ng-click="setFilter('type', 'hh')">Счастливые часы</a>
                         </li>
                         <li>
-                            <a href="#" class="btn filter-btn">Акции</a>
+                            <a href="" class="btn filter-btn" ng-click="setFilter('type', 'avail')">Акции</a>
                         </li>
                         <li>
-                            <a href="#" class="btn filter-btn">Скидки</a>
+                            <a href="" class="btn filter-btn" ng-click="setFilter('type', 'discount')">Скидки</a>
                         </li>
                     </ul>
                     <div class="subscribe-widget">
@@ -79,11 +79,11 @@
                     <div class="post-archive-standart">
 
                         <ul class="post-standart clearfix">
-                            <li ng-repeat="avail in $ctrl.avails | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+                            <li ng-repeat="avail in $ctrl.avails | filter: types">
                                 <div class="post-header">
                                     <ul class="post-categories">
                                         <li>
-                                            <a href="#" rel="category tag">{{avail.type}}</a>
+                                            <a href="" rel="category tag" ng-click="setFilter('type', avail.type)">{{avail.typeName}}</a>
                                         </li>
                                     </ul>
                                     <h2>
@@ -95,7 +95,7 @@
                                         </li>
                                         <li class="meta-author">
                                             <span>от</span>
-                                            <a href="#">{{avail.company}}</a>
+                                            <a href="" ng-click="setFilter('company', avail.company)">{{avail.company}}</a>
                                         </li>
                                         <li class="meta-comments">
                                             <a href="#" class="comments-link">5 <span class="views-text">Комментариев</span><i class="fa fa-commenting-o"></i></a>
