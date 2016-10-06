@@ -156,7 +156,7 @@ div.site-description {
     display: inline-block;
 }
 
-.post-categories::before {
+.post-type::before {
     content: '';
     vertical-align: middle;
     display: inline-block;

@@ -81,7 +81,7 @@
                         <ul class="post-standart clearfix">
                             <li ng-repeat="avail in $ctrl.avails | filter: types">
                                 <div class="post-header">
-                                    <ul class="post-categories">
+                                    <ul class="post-categories post-type">
                                         <li>
                                             <a href="" rel="category tag" ng-click="setFilter('type', avail.type)">{{avail.typeName}}</a>
                                         </li>
@@ -98,12 +98,12 @@
                                             <a href="" ng-click="setFilter('company', avail.company)">{{avail.company}}</a>
                                         </li>
                                         <li class="meta-comments">
-                                            <a href="#" class="comments-link">5 <span class="views-text">Комментариев</span><i class="fa fa-commenting-o"></i></a>
+                                            <a href="" class="comments-link">5 <span class="views-text">Комментариев</span><i class="fa fa-commenting-o"></i></a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="post-media">
-                                    <a href="#">
+                                    <a href="#!/avails/{{avail.id}}">
                                         <img ng-src="{{avail.imageUrl}}" class="post-image">
                                     </a>
                                 </div>
@@ -113,7 +113,7 @@
 
                                 <!-- Button -->
                                 <div class="post-more">
-                                    <a href="#" class="btn btn-primary btn-effect">
+                                    <a href="#!/avails/{{avail.id}}" class="btn btn-primary btn-effect">
                                         <span>Показать</span>
                                         <span><i class="fa fa-long-arrow-right fa-lg"></i></span>
                                     </a>

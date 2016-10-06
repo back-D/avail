@@ -1,6 +1,9 @@
 
 $(document).ready(function () {
+
+setTimeout(function() {
     $(".sidebar").stick_in_parent();
+}, 100);
 });
 /*
 //----------
