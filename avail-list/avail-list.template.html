@@ -11,7 +11,7 @@
             <ul class="header-list clearfix">
                 <li class="subscribe">
                     <div>
-                        <a href="#" class="btn btn-secondary btn-effect">
+                        <a href="" class="btn btn-secondary btn-effect">
                             <span>Подписаться</span>
                             <span><i class="fa fa-envelope-o fa-lg"></i></span>
                         </a>
@@ -24,13 +24,13 @@
                         </a>
                     </div>
                 </li>
-                <li class="site-search">
+                <!--<li class="site-search">
                     <div>
                         <a href="#search" class="btn-search">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
-                </li>
+                </li>-->
             </ul>
 
         </div>
@@ -79,7 +79,7 @@
                     <div class="post-archive-standart">
 
                         <ul class="post-standart clearfix">
-                            <li ng-repeat="avail in $ctrl.avails | filter: types">
+                            <li ng-repeat="avail in $ctrl.avails | filter: types" class="avail-list-item">
                                 <div class="post-header">
                                     <ul class="post-categories post-type">
                                         <li>

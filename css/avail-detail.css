@@ -1,0 +1,10 @@
+.post-description h3 {
+    color: #000;
+}
+
+.post-description ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}

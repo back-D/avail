@@ -494,6 +494,43 @@ button.close {
     display: none;
 }
 
+.avail {
+    background-color: white;
+    display: none;
+    float: left;
+    margin-right: 3em;
+
+}
+
+.avail:first-child {
+    display: block;
+}
+
+.avail-images {
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+ul.post-thumbs {
+    list-style: none;
+    margin: 0;
+}
+
+ul.post-thumbs img {
+    height: 100px;
+    padding: 1em;
+    width: 100px;
+}
+
+ul.post-thumbs li {
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1em;
+}
+
 @media (min-width: 768px) {
 
     .header-list .site-description {
